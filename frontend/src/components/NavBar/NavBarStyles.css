@@ -9,9 +9,16 @@
 .nav-bar-wrapper .row{
     width: 98%;
 }
+
+@font-face {
+    font-family: 'Mont-Bold';
+    src: url(../../font/Montserrat-Bold.ttf);
+}
+
 .main-name{
-    font-family: 'CustomFont';
-    src: url(../../font/font.otf);
+    font-family: 'Mont-Bold', sans-serif;
+    letter-spacing: 4.5px;
+    
 }
 
 .right-nav {

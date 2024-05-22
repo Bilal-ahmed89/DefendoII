@@ -121,10 +121,10 @@ function NavBar() {
                                                         <div className="accordion" id="accordionExampleThree">
                                                             <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExampleThree">
                                                                 <div className="about mb-0 px-3">
-                                                                    <li className='list-none m-2 d-flex justify-content-between p-2'><Link className='text-decor fs-10 text-uppercase' to="/coming-soon">Shirts</Link><span style={{ fontSize: '8px', textDecoration: 'underline' }} className='text-dark p-1 rounded-1 ms-4 '>Coming Soon</span></li>
-                                                                    <li className='list-none m-2  d-flex justify-content-between p-2'><Link className='text-decor fs-10 text-uppercase' to="/coming-soon">T-shirts</Link><span style={{ fontSize: '8px', textDecoration: 'underline' }} className='text-dark p-1 rounded-1 ms-4 '>Coming Soon</span></li>
-                                                                    <li className='list-none m-2  d-flex justify-content-between p-2'><Link className='text-decor fs-10 text-uppercase' to="/coming-soon">Hoodies</Link> <span style={{ fontSize: '8px', textDecoration: 'underline' }} className='text-dark p-1 rounded-1 ms-4 '>Coming Soon</span></li>
-                                                                    <li className='list-none m-2  d-flex justify-content-between p-2'><Link className='text-decor fs-10 text-uppercase' to="/coming-soon">Track suits</Link> <span style={{ fontSize: '8px', textDecoration: 'underline' }} className='text-dark p-0 ms-1 rounded-1 '>Coming Soon</span></li>
+                                                                    <li className='list-none m-2 d-flex justify-content-between p-2'><Link className='text-decor fs-10 ' to="/Shirts">Shirts</Link></li>
+                                                                    <li className='list-none m-2  d-flex justify-content-between p-2'><Link className='text-decor fs-10 ' to="/coming-soon">Tank Tops</Link></li>
+                                                                    <li className='list-none m-2  d-flex justify-content-between p-2'><Link className='text-decor fs-10 ' to="/coming-soon">Hoodies</Link> <span style={{ fontSize: '8px', textDecoration: 'underline' }} className='text-dark p-1 rounded-1 ms-4 '>Coming Soon</span></li>
+                                                                    <li className='list-none m-2  d-flex justify-content-between p-2'><Link className='text-decor fs-10 ' to="/coming-soon">Track suits</Link> <span style={{ fontSize: '8px', textDecoration: 'underline' }} className='text-dark p-0 ms-1 rounded-1 '>Coming Soon</span></li>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -151,10 +151,8 @@ function NavBar() {
                                 <div className="offcanvas-footer">
                                     <hr className='m-1 w-100' />
                                     <div className="social-media py-2">
-                                        <Link to=""><i className="bi bi-facebook fs-6"></i></Link>
-                                        <Link to="https://www.instagram.com/defendoofficial/reels/"><i className="bi bi-instagram fs-6"></i></Link>
-                                        <Link to=""><i className="bi bi-tiktok fs-6"></i></Link>
-                                    </div>
+                                        <Link to="https://www.instagram.com/shopdefendo"><i className="bi bi-instagram fs-6"></i></Link>
+                                        </div>
                                 </div>
 
 

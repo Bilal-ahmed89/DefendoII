@@ -25,7 +25,7 @@ function ProductCard({ data: ProductData, routeName }) {
                 <div className="card-body">
                     <h5 className="card-title text-center fw-bold">{ProductData?.name}</h5>
                     
-                    <p className="card-text text-center price">{ProductData?.price}pkr</p>
+                    <p className="card-text text-center price">{ProductData?.price} pkr</p>
                 </div>
             </div>
         </div>
