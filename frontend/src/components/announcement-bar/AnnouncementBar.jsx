@@ -8,7 +8,7 @@ function AnnouncementBar() {
         <div className="announcement-bar-wrapper ">
             <div className="row">
                 <div className="col-md-12">
-                    <p className='text-uppercase'><Link to=""> EASY RETURNS & EXCHANGES</Link></p>
+                    <p className='upper-link'>Delivering All Over Pakistan</p>
                 </div>
             </div>
         </div>

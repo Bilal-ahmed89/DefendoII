@@ -1,8 +1,17 @@
+*{
+  font-family: 'Mont', sans-serif;
+}
 .secondary-nav-wrapper .row {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+@font-face {
+  font-family: 'Mont';
+  src: url(../../font/Montserrat-Medium.ttf);
+}
+
 .secondary-nav-wrapper  .container {
   display: flex;
   align-items: center;
@@ -127,6 +136,10 @@ width: 90%;
   position: relative;
   display: inline-block;
 }
+.dropdown3 {
+  position: relative;
+  display: inline-block;
+}
 
 .dropdown2-btn {
   background-color: transparent;
@@ -136,8 +149,18 @@ width: 90%;
   font-size: 16px;
   font-weight: 600;
 }
+
+.dropdown3-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+}
+
 .dropmenu2 {
-  width: 830px;
+  width: 800px;
   display: none;
   position: absolute;
   top: 46px;
@@ -145,11 +168,28 @@ width: 90%;
   left: -90px;
   background-color: #fff;
   border-radius: 10px;
-  padding: 10px;
+  padding: 0px;
+  z-index: 1;
+  transition: 4s ;
+}
+
+.dropmenu3 {
+  width: 350px;
+  display: none;
+  position: absolute;
+  top: 46px;
+  border: 1px solid #d8d8d8;
+  left: -50px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0px;
   z-index: 1;
   transition: 4s ;
 }
 .dropmenu2 ul{
+  display: block;
+}
+.dropmenu3 ul{
   display: block;
 }
 
@@ -168,58 +208,26 @@ width: 90%;
   color: #000;
 }
 
-.dropdown3 {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown3-btn {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  position: relative;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.dropmenu3 {
-  width: 290px;
-  display: none;
-  position: absolute;
-  top: 46px;
-  border: 1px solid #d8d8d8;
-  left: -10px;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 10px;
-  z-index: 1;
-  transition: 4s ;
-}
-.dropmenu3 ul{
-  display: block;
-}
-
 .dropdown3:hover .dropmenu3 {
   display: block;
+  transition: 4s ;
   z-index: 2;
 }
-
 .dropmenu3 li{
   font-size: large;
-  font-weight: 500;
   background-color: #fff;
   margin: 0;
 }
 
 .dropmenu3 li:hover{
   color: #000;
-  transition: 4s ;
 }
+
 .secondary-nav-wrapper .left-col{
   border-right: 1px solid #000;
 }
 .secondary-nav-wrapper .mid-col{
-  border-right: 1px solid #000;
+  /* border-right: 1px solid #000; */
 }
 .secondary-nav-wrapper .offcanvas-btn{
   width: 20%;

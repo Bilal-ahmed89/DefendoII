@@ -43,6 +43,13 @@ import Users from './AdminPanel/Users';
 import Pendants from './components/pages/pendants/Pendants';
 import PendantGrid from './components/pages/pendants/PendantGrid';
 
+import Shirts from './components/pages/Shirts/Shirts';  // SAMI CODE TRY
+import ShirtsGrid from './components/pages/Shirts/ShirtsGrid';
+import ShirtsDescription from './components/pages/Shirts/ShirtsDescription';
+import TankTops from './components/pages/TankTop/TankTops';  
+import TankTopsGrid from './components/pages/TankTop/TankTopsGrid';
+import TankTopsDescription from './components/pages/TankTop/TankTopsDescription';
+
 
 import StickyNav from './components/StickyNav';
 import NewReleaseGrid from './components/newReleaseGrid/NewReleaseGrid';
@@ -52,6 +59,8 @@ import RingCategory from './AdminPanel/components/RingCategory';
 import BraceletCategory from './AdminPanel/components/BraceletCategory';
 import ChainCategory from './AdminPanel/components/ChainCategory';
 import PendantCategory from './AdminPanel/components/PendantCategory';
+import ShirtCategory from './AdminPanel/components/ShirtCategory';
+import TankTopsCategory from './AdminPanel/components/TankTopsCategory';
 import NewReleasesCategory from './AdminPanel/components/NewReleaseCategory';
 import LimitedDropsCategory from './AdminPanel/components/LimitedDropsCategory';
 
@@ -72,6 +81,8 @@ function App() {
         <Route path='/bracelet-grid' element={<BraceletGrid />} />
         <Route path='/ring-grid' element={<RingGrid />} />
         <Route path='/pendant-grid' element={<PendantGrid />} />
+        <Route path='/Shirts-grid' element={<ShirtsGrid />} />
+        <Route path='/TankTops-grid' element={<TankTopsGrid/>} />
         <Route path='/chain-grid' element={<ChainGrid />} />
         <Route path='/limited-drop-grid' element={<LimitedDropGrid />} />
         <Route path='/new-release-grid' element={<NewReleaseGrid />} />
@@ -91,7 +102,9 @@ function App() {
         <Route path='/account/login' element={<Account />} />
         <Route path='/account/signup' element={<SignUp />} />
         
-        
+        <Route path='/Shirts' element={<Shirts />} />
+        <Route path='/TankTops' element={<TankTops />} />
+
         <Route path='/checkout' element={<Checkout />} />
         
         
@@ -109,6 +122,8 @@ function App() {
         <Route path='/admin-panel/category/bracelet' element={<BraceletCategory/>} />
         <Route path='/admin-panel/category/chain' element={<ChainCategory/>} />
         <Route path='/admin-panel/category/pendant' element={<PendantCategory/>} />
+        <Route path='/admin-panel/category/shirt' element={<ShirtCategory/>} />
+        <Route path='/admin-panel/category/TankTops' element={<TankTopsCategory/>} />
         <Route path='/admin-panel/category/limitedDrop' element={<LimitedDropsCategory/>} />
         <Route path='/admin-panel/category/newRelease' element={<NewReleasesCategory/>} />
 
@@ -121,6 +136,8 @@ function App() {
         <Route path='/limitedDrop-description/:id' element={<LimitedDropsDescription />} />
         <Route path='/newReleases-description/:id' element={<NewReleasesDescription />} />
         <Route path='/pendant-description/:id' element={<PendantDescription />} />
+        <Route path='/Shirt-description/:id' element={<ShirtsDescription />} />
+        <Route path='/TankTops-description/:id' element={<TankTopsDescription />} />
         <Route path='/account/login' element={<Account />} />
         <Route path='/account/signup' element={<SignUp />} />
         <Route path='/coming-soon' element={<ComingSoon />} />

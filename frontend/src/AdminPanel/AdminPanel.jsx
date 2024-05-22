@@ -37,6 +37,7 @@ function AdminPanel() {
         <div className="col-md-10">
           <h2 className='text-center m-3 '>Admin Panel</h2>
           <h6 className='text-center m-3 fw-semibold '>Categories</h6>
+
           <div className="d-flex justify-content-between mt-3">
             <div className=" col-md-4 px-4 py-2">
               <Link to='/admin-panel/category/ring'><button className="btn btn-dark">Rings</button></Link>
@@ -49,6 +50,7 @@ function AdminPanel() {
             </div>
 
           </div>
+
           <div className="d-flex justify-content-between mt-3">
             <div className="col-md-4 px-4 py-2">
             <Link to='/admin-panel/category/chain'><button className="btn btn-dark">Chains</button></Link>
@@ -59,6 +61,16 @@ function AdminPanel() {
             <div className="col-md-4 px-4 py-2">
             <Link to='/admin-panel/category/newRelease'><button className="btn btn-dark">New Releases</button></Link>
             </div>
+          </div>
+          
+          <div className="d-flex justify-content-between mt-3">
+            <div className=" col-md-4 px-4 py-2">
+              <Link to='/admin-panel/category/shirt'><button className="btn btn-dark">Shirts</button></Link>
+            </div>
+            <div className="col-md-4 px-4 py-2">
+            <Link to='/admin-panel/category/TankTops'><button className="btn btn-dark">TankTops</button></Link>
+            </div>
+           
           </div>
 
         </div>

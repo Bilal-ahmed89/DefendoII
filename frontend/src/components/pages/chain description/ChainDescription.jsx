@@ -207,10 +207,7 @@ function ChainDescription() {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-4 d-none d-md-block">
-                    <textarea className='p-2 review-textarea w-100' placeholder='Any Reviews...' id="myTextarea" cols="36" rows="5"></textarea>
-                    <button className='review-submit w-100' onClick={getValue()}>Submit</button>
-                </div>
+                 
             </div>
         </div>
     )

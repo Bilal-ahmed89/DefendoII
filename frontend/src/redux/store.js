@@ -12,6 +12,8 @@ import { ringsApi } from '../features/rings.js';
 import { baraceletsApi } from '../features/bracelets.js'
 import { chainsApi } from '../features/chains.js'
 import {pendantsApi} from '../features/pendants.js'
+import {shirtsApi} from '../features/shirts.js'
+import {tankTopsApi} from '../features/TankTops.js'
 import { limitedDropsApi } from '../features/limitedDrops.js';
 import { newReleasesApi } from '../features/newReleases.js';
 import { ordersApi } from '../features/orders.js';
@@ -35,6 +37,8 @@ export const store = configureStore({
     [baraceletsApi.reducerPath]: baraceletsApi.reducer,
     [chainsApi.reducerPath]: chainsApi.reducer,
     [pendantsApi.reducerPath]: pendantsApi.reducer,
+    [shirtsApi.reducerPath]: shirtsApi.reducer,
+    [tankTopsApi.reducerPath]: tankTopsApi.reducer,
     [limitedDropsApi.reducerPath]: limitedDropsApi.reducer,
     [newReleasesApi.reducerPath]: newReleasesApi.reducer,
     [ordersApi.reducerPath]: ordersApi.reducer,
@@ -57,6 +61,8 @@ export const store = configureStore({
       .concat(baraceletsApi.middleware)
       .concat(chainsApi.middleware)
       .concat(pendantsApi.middleware)
+      .concat(shirtsApi.middleware)
+      .concat(tankTopsApi.middleware)
       .concat(limitedDropsApi.middleware)
       .concat(newReleasesApi.middleware)
       .concat(ordersApi.middleware)

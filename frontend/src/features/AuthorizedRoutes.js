@@ -4,6 +4,7 @@ import Cookies from "js-cookie"
 const AuthorisedRoutes = () => {
     const token =  Cookies.get("loginToken")
     const role = Cookies.get("userRole");
+    console.log(token, role);
    
     const location = useLocation()
 

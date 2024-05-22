@@ -13,6 +13,8 @@ import ringRoutes from './routes/ringRoutes.js'
 import braceletRoutes from './routes/braceletRoutes.js'
 import chainRoutes from './routes/chainRoutes.js'
 import pendantRoutes from './routes/pendantRoutes.js'
+import shirtRoutes from './routes/shirtRoutes.js'
+import TankTopsRoutes from './routes/TankTops.js'
 import newReleaseRoutes from './routes/newReleaseRoutes.js'
 import limitedDropRoutes from './routes/limitedDropRoutes.js'
 import stripeRoutes from './routes/stripeRoutes.js'
@@ -55,6 +57,8 @@ app.use('/', ringRoutes);
 app.use('/', braceletRoutes);
 app.use('/', chainRoutes);
 app.use('/', pendantRoutes);
+app.use('/', shirtRoutes);
+app.use('/', TankTopsRoutes);
 app.use('/', newReleaseRoutes);
 app.use('/', limitedDropRoutes);
 app.use('/', stripeRoutes);

@@ -3,7 +3,7 @@ import Modal from 'react-modal';
 import '../Product description/ProductDescriptionStyles.css'
 import { Link, useParams } from 'react-router-dom'
 import QuantitySelector from '../../quantitySelector/QuantitySelector'
-import { useGetPendantDetailsByIdQuery } from '../../../features/pendants';
+import { useGetShirtsDetailsByIdQuery } from '../../../features/shirts';
 import { useDispatch} from 'react-redux';
 import { addToCart } from '../../../features/cartSlice';
 import BarLoader from "react-spinners/BarLoader";
@@ -11,11 +11,11 @@ import { useEffect } from 'react';
 import { handleScroll } from '../../../animation';
 
 
-function PendantDescription() {
+function ShirtsDescription() {
 
     const [selectedImage, setSelectedImage] = useState(null);
     const { id } = useParams();
-    const { data: productData } = useGetPendantDetailsByIdQuery(id)
+    const { data: productData } = useGetShirtsDetailsByIdQuery(id)
     const baseUrl = 'http://localhost:7000';
     const dispatch = useDispatch();
     const [quantity, setQuantity] = useState(1);
@@ -213,4 +213,4 @@ function PendantDescription() {
     )
 }
 
-export default PendantDescription;
+export default ShirtsDescription;
