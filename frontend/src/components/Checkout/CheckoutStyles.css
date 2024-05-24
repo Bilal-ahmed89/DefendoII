@@ -2,6 +2,9 @@
     display: flex;
     align-items: normal;
 }
+.error-message{
+    color: red;
+}
 
 .checkout-btn{
     background-color: black !important;

@@ -42,16 +42,16 @@ function Checkout() {
 
 
     const validationSchema = Yup.object().shape({
-        firstName: Yup.string().required(''),
-        lastName: Yup.string().required(''),
-        email: Yup.string().required(''),
-        address: Yup.string().required(''),
-        country: Yup.string().required(''),
-        city: Yup.string().required(''),
-        zip: Yup.string().required(''),
-        phoneNumber: Yup.string().required(''),
+        firstName: Yup.string().required('First name is required'),
+        lastName: Yup.string().required('Last name is required'),
+        email: Yup.string().email('Invalid email address').required('Email is required'),
+        address: Yup.string().required('Address is required'),
+        country: Yup.string().required('Country is required'),
+        city: Yup.string().required('City is required'),
+        zip: Yup.string().required('Zip code is required'),
+        phoneNumber: Yup.string().required('Phone number is required'),
         orderNotes: Yup.string(),
-        termsAndConditions: Yup.string().required(''),
+        termsAndConditions: Yup.boolean().oneOf([true], 'You must accept the terms and conditions').required('Terms and conditions is required')
     });
 
     const [createOrder] = useCreateOrderMutation()
@@ -168,7 +168,7 @@ function Checkout() {
                                     <div className="col-md-4">
                                         <label htmlFor='city' className="form-label">City</label>
                                         <Field as={TextField} className="p-1 my-2 form-control" type="text" placeholder='city' name="city" required />
-                                        {errors.city && <ErrorMessage className="error-message" name="addrcityess" component="div" />}
+                                        {errors.city && <ErrorMessage className="error-message" name="city" component="div" />}
                                     </div>
                                     <div className="col-md-3">
                                         <label htmlFor='zip' className="form-label">Zip</label>
@@ -190,7 +190,8 @@ function Checkout() {
 
                                     <div className="col-12 py-3">
                                         <label htmlFor="orderNotes" className="form-label">Order Notes (optional)</label>
-                                        <Field as={TextareaAutosize} type="textarea" className="form-control" name="orderNotes" placeholder="Add any specific instructions or notes for your order" />
+
+                                        <Field className="form-control" name="orderNotes" placeholder="Add any specific instructions or notes for your order" />
                                         {errors.orderNotes && <ErrorMessage className="error-message" name="orderNotes" component="div" />}
                                     </div>
                                     <div className="order-summary py-3">
@@ -206,9 +207,9 @@ function Checkout() {
                                                         <span className="text-body-secondary">Rs {item.price}</span>
 
                                                     </li>
-                                                    ))
-                                                }
-                                            </ul>
+                                                ))
+                                            }
+                                        </ul>
                                     </div>
                                     <div className="col-12 form-check mb-3 py-3 ms-4 terms" id='terms'>
                                         <Field type="checkbox" id="termsAndConditions" name="termsAndConditions" className="form-check-input" required />
@@ -234,4 +235,4 @@ function Checkout() {
 
 }
 
-export default Checkout;
+export default Checkout;
