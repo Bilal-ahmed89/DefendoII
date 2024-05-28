@@ -55,52 +55,32 @@ function SecondaryNav() {
             <Link to="/new-releases" className='text-decor noeffect'><li className='list-none text-uppercase me-4 d-none d-md-block p-1' ><span>New Releases</span></li></Link>
 
             <li className='list-none '>
-                <div className="dropdown2">
-                  <div className='dropdown2-btn btn text-dark text-uppercase'>
-                   <span> Clothing</span>  <i className="bi bi-chevron-down down-arrow mx-1"></i>
+                <div className="dropdown3">
+                  <div className='dropdown3-btn btn text-dark text-uppercase'>
+                   <span> Clothing</span> <i className="bi bi-chevron-down down-arrow mx-1"></i>
                   </div>
-                  <div className="dropmenu2">
-                    <div className="row p-3">
-                      <div className="col-md-4 left-col">
-                        <ul className='p-1'>
-                          <h5 className='text-uppercase fs-6 fw-bold p-1 mb-3 fs-5'>outwear</h5>
+                  <div className="dropmenu3">         
+            
+                        <ul className='p-3'>
 
                           <li className='list-none m-2'><Link className='text-decor fs-6 text-dark ' to="/Shirts">Shirts</Link></li>
                           <li className='list-none m-2'><Link className='text-decor fs-6 text-dark ' to="/tankTops">Tank Tops</Link></li>
-                          <li className='list-none m-2'><Link className='text-decor fs-6 text-dark ' to="/coming-soon">Hoodies</Link> <span style={{ fontSize: '10px', textDecoration: 'underline' }} className='text-dark p-1 rounded-1 ms-4 '>Coming Soon</span></li>
+                          <li className='list-none m-2'><Link className='text-decor fs-6 text-dark ' to="/coming-soon">Pants</Link> <span style={{ fontSize: '10px', textDecoration: 'underline' }} className='text-dark p-1 rounded-1 ms-4 '>Coming Soon</span></li>
                           <li className='list-none m-2'><Link className='text-decor fs-6 text-dark ' to="/coming-soon">TrackSuits</Link> <span style={{ fontSize: '10px', textDecoration: 'underline' }} className='text-dark p-1 rounded-1 ms-4 '>Coming Soon</span></li>
                         </ul>
                       </div>
                       
-                      <div className="col-md-4 right-col">
-                        <ul className='p-1'>
-                          <h5 className='text-uppercase fs-6 fw-bold p-1 mb-3 fs-5'> pants</h5>
-
-                          <li className='list-none m-2'><Link className='text-decor fs-6 text-dark ' to='/coming-soon'>Trousers</Link><span style={{ fontSize: '10px', textDecoration: 'underline' }} className='text-dark p-1 rounded-1 ms-4 '>Coming Soon</span></li>
-                          <li className='list-none m-2'><Link className='text-decor fs-6 text-dark ' to='/coming-soon'>Shorts  </Link><span style={{ fontSize: '10px', textDecoration: 'underline' }} className='text-dark p-1 rounded-1 ms-4'>Coming Soon</span></li>
-                          <li className='list-none m-2'><Link className='text-decor fs-6 text-dark ' to='/coming-soon'>SweatPants</Link><span style={{ fontSize: '10px', textDecoration: 'underline' }} className='text-dark p-1  rounded-1 ms-4'>Coming Soon</span></li>
-                          <li className='list-none m-2'><Link className='text-decor fs-6 text-dark ' to='/coming-soon'>Jeans</Link><span style={{ fontSize: '10px', textDecoration: 'underline' }} className='text-dark p-1  rounded-1 ms-4'>Coming Soon</span></li>
-                        </ul>
-
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </li>
               
-
               <li className='list-none '>
                 <div className="dropdown3">
                   <div className='dropdown3-btn btn text-dark text-uppercase'>
-                   <span> Assessories</span>  <i className="bi bi-chevron-down down-arrow mx-1"></i>
+                   <span> Assessories</span> <i className="bi bi-chevron-down down-arrow mx-1"></i>
                   </div>
-                  <div className="dropmenu3">
-                    <div className="row p-3">
-                      
-                      <div className="col-md-4 mid-col">
-
-                        <ul className='p-1'>
-                          <h5 className='text-uppercase fs-6 fw-bold p-1 mb-3 fs-5'>Accessories</h5>
+                  <div className="dropmenu3">         
+            
+                        <ul className='p-3'>
 
                           <li className='list-none m-2'><Link className='text-decor fs-6 text-dark ' to="/Pendants">Pendants</Link></li>
                           <li className='list-none m-2'><Link className='text-decor fs-6 text-dark ' to="/chains">Chains </Link></li>
@@ -109,11 +89,10 @@ function SecondaryNav() {
                         </ul>
                       </div>
                       
-                    </div>
-                  </div>
                 </div>
               </li>
-              
+
+            
               
               <li className='list-none '>
                 <div className="dropdown3">
@@ -124,7 +103,6 @@ function SecondaryNav() {
                     <ul className='p-1'>
                       <li className='list-none m-2'><Link className='text-decor fs-6 text-dark ' to="/contact">Contact Us</Link></li>
                       <li className='list-none m-2'><Link className='text-decor fs-6 text-dark ' to="/faq">FAQs</Link></li>
-                      <li className='list-none m-2'><Link className='text-decor fs-6 text-dark ' to="/warranty-coverage">Warranty Coverage</Link></li>
                       <li className='list-none m-2'><Link className='text-decor fs-6 text-dark ' to="/return-refund">Returns & Refunds</Link></li>
                       {
                         token ?

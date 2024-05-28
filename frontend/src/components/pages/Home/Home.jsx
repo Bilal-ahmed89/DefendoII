@@ -12,9 +12,9 @@ function Home() {
       <Carousel />
       <JustDropped />
       <ProductCategoryRow />
-      <WarrantyCoverage />
-      <OurInstaReviews />
-      <CustomerReview />
+      {/* <WarrantyCoverage /> */}
+      {/* <OurInstaReviews /> */}
+      {/* <CustomerReview /> */}
 
     </>
   )

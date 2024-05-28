@@ -15,6 +15,7 @@ function PendantProduct() {
     const initialValues = {
         name: '',
         price: '',
+        description: '',
         quantity: ''  
     }
 
@@ -63,6 +64,7 @@ function PendantProduct() {
         const newProduct = {
             name: values.name,
             price: values.price,
+            description: values.description,
             quantity: values.quantity,
             productId: routeName,
             img: uploadedImages,
@@ -99,6 +101,11 @@ function PendantProduct() {
                                                 <Field className='password p-1 my-2' type="text" placeholder='Price' name="price" />
                                                 {errors.price && <ErrorMessage className="error-message" name="price" component="div" />}
                                             </div>
+                                        </div>
+
+                                        <div className="mx-2">
+                                            <Field className='password p-1 my-2' type="text" placeholder='Description' name="description" />
+                                            {errors.quantity && <ErrorMessage className="error-message" name="description" component="div" />}
                                         </div>
 
                                         <div className="mx-2">

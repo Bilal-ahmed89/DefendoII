@@ -22,6 +22,9 @@ const allProducts = new Schema({
     quantity : {
         type : String
     },
+    description : {
+        type : String
+    },
     variants : {
         type : Array
     },

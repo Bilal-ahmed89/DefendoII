@@ -16,6 +16,7 @@ function BraceletProduct() {
     const initialValues = {
         name: '',
         price: '',
+        description: '',
         quantity: ''  
     }
 
@@ -65,6 +66,7 @@ function BraceletProduct() {
             name: values.name,
             price: values.price,
             quantity: values.quantity,
+            description: values.description,
             productId: routeName,
             img: uploadedImages,
             variants: variants
@@ -102,6 +104,11 @@ function BraceletProduct() {
                                             </div>
                                         </div>
 
+                                        <div className="mx-2">
+                                            <Field className='password p-1 my-2' type="text" placeholder='Description' name="description" />
+                                            {errors.quantity && <ErrorMessage className="error-message" name="description" component="div" />}
+                                        </div>
+                              
                                         <div className="mx-2">
                                             <Field className='password p-1 my-2' type="text" placeholder='Quantity' name="quantity" />
                                             {errors.quantity && <ErrorMessage className="error-message" name="quantity" component="div" />}

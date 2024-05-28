@@ -18,6 +18,9 @@ const chainsSchema = new Schema({
     quantity : {
         type : String
     },
+    description : {
+        type : String
+    },
     variants: [
         {
             size: {

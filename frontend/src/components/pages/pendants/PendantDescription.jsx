@@ -29,6 +29,7 @@ function PendantDescription() {
         const product = {
             Name: productData?.name,
             price: productData?.price,
+            description: productData?.description,
             img: productData?.img,
             id: productData?._id,
             quantity,
@@ -117,9 +118,9 @@ function PendantDescription() {
                     </div>
                 </div>
                 <div className="col-md-5 right-col align-items-start">
-                    <h5 className="card-title text-start fw-bold">{productData?.name}</h5>
+                    <h5 className="card-title text-start text-uppercase fw-bold">{productData?.name}</h5>
                     
-                    <p className="card-text text-start price mt-4">{productData?.price}.00pkr</p>
+                    <p className="card-text text-start price mt-4">{productData?.price}.00 pkr</p>
                     <hr />
                     {/* <div className="ring-size">
                         <p>Ring Size:</p>
@@ -152,9 +153,9 @@ function PendantDescription() {
                         </>
                     )}
                     <div className="description-wrapper">
-                        <ul className='p-0 mt-4'>
-                            <li className='list-none mx-0 fw-bold my-1 font-monospace'>Non-faded</li>
-                            <li className='list-none mx-0 fw-bold my-1 font-monospace'>Stainless Steel</li>
+                    <ul className='p-0 mt-4'>
+                            <li className='list-none mx-0 fw-bold my-1 font-monospace'>Description</li>
+                            <li className='list-none mx-0 fw my-1 font-monospace'>{productData?.description}</li>
                         </ul>
                     </div>
                 </div>
