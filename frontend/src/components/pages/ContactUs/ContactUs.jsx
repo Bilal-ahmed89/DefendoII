@@ -19,8 +19,7 @@ function ContactUs() {
                             <p className='answer my-4'>Be sure to include as much information as you can e.g./ order number (#123456) email address, pictures, etc. This will allow us to answer any questions you have as quickly as possible. </p>
                             <div className="note">
                                 <p>Please note that dispatch time from our warehouse is unaffected. If you experience unusual delay in delivery, it might be due to incomplete shipping details or stock discrepancies. Please get in touch with us in that case so we will try our best to offer a solution. </p>
-                                <p>Warehouse: Flat no 9, Bewal Apartments, G-9 Markaz Islamabad.</p>
-                                <p>WhatsApp: 03005199799</p>
+                 
                                 <Link to='https://mail.google.com/mail/?view=cm&to=Shopdefendo@gmail.com' target="_blank"><p> Email: Shopdefendo@gmail.com</p></Link>
                                 
                             </div>

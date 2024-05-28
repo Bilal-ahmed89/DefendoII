@@ -15,6 +15,9 @@ const TankTopsSchema = new Schema({
         type: [String],
         
     },
+    description : {
+        type : String
+    },
     quantity : {
         type : String
     },

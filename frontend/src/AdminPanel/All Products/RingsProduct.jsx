@@ -16,6 +16,7 @@ function RingsProduct() {
     const initialValues = {
         name: '',
         price: '',
+        description: '',
         quantity: ''
     }
 
@@ -81,6 +82,7 @@ function RingsProduct() {
             name: values.name,
             price: values.price,
             quantity: values.quantity,
+            description: values.description,
             productId: routeName,
             img: uploadedImages,
             colors: colors,
@@ -118,6 +120,10 @@ function RingsProduct() {
                                                 <Field className='password p-1 my-2' type="text" placeholder='Price' name="price" />
                                                 {errors.price && <ErrorMessage className="error-message" name="price" component="div" />}
                                             </div>
+                                        </div>
+                                        <div className="mx-2">
+                                            <Field className='password p-1 my-2' type="text" placeholder='Description' name="description" />
+                                            {errors.quantity && <ErrorMessage className="error-message" name="description" component="div" />}
                                         </div>
                                         <div className="mx-2">
                                             <Field className='password p-1 my-2' type="text" placeholder='Quantity' name="quantity" />

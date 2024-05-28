@@ -105,6 +105,7 @@ function NavBar() {
                                                             <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleTwo">
                                                                 <div className="about mb-0 px-3">
                                                                     <Link className='d-block my-1 py-2 text-uppercase' to="/Rings"> rings</Link>
+                                                                    <Link className='d-block my-1 py-2 text-uppercase' to="/Chains"> chains</Link>
                                                                     <Link className='d-block my-1 py-2 text-uppercase' to="/Bracelets"> bracelets</Link>
                                                                     <Link className='d-block my-1 py-2 text-uppercase' to="/Pendants">pendants</Link>
                                                                 </div>
@@ -122,8 +123,8 @@ function NavBar() {
                                                             <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExampleThree">
                                                                 <div className="about mb-0 px-3">
                                                                     <li className='list-none m-2 d-flex justify-content-between p-2'><Link className='text-decor fs-10 ' to="/Shirts">Shirts</Link></li>
-                                                                    <li className='list-none m-2  d-flex justify-content-between p-2'><Link className='text-decor fs-10 ' to="/coming-soon">Tank Tops</Link></li>
-                                                                    <li className='list-none m-2  d-flex justify-content-between p-2'><Link className='text-decor fs-10 ' to="/coming-soon">Hoodies</Link> <span style={{ fontSize: '8px', textDecoration: 'underline' }} className='text-dark p-1 rounded-1 ms-4 '>Coming Soon</span></li>
+                                                                    <li className='list-none m-2  d-flex justify-content-between p-2'><Link className='text-decor fs-10 ' to="/TankTops">Tank Tops</Link></li>
+                                                                    <li className='list-none m-2  d-flex justify-content-between p-2'><Link className='text-decor fs-10 ' to="/coming-soon">Pants</Link> <span style={{ fontSize: '8px', textDecoration: 'underline' }} className='text-dark p-1 rounded-1 ms-4 '>Coming Soon</span></li>
                                                                     <li className='list-none m-2  d-flex justify-content-between p-2'><Link className='text-decor fs-10 ' to="/coming-soon">Track suits</Link> <span style={{ fontSize: '8px', textDecoration: 'underline' }} className='text-dark p-0 ms-1 rounded-1 '>Coming Soon</span></li>
                                                                 </div>
                                                             </div>
@@ -143,7 +144,6 @@ function NavBar() {
                                     <div className="about mt-4">
                                         <Link className='d-block my-3 ms-0' to="/contact">Contact Us</Link>
                                         <Link className='d-block my-3 ms-0' to="/faq">FAQs</Link>
-                                        <Link className='d-block my-3 ms-0' to="/warranty-coverage">Warranty Coverage</Link>
                                         <Link className='d-block my-3 ms-0' to="/return-refund">Returns & Refunds</Link>
                                         <Link className='d-block my-3 ms-0' to="/account/login">Account</Link>
                                     </div>

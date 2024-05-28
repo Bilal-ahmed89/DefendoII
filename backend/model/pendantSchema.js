@@ -15,6 +15,9 @@ const pendantsSchema = new Schema({
         type: [String],
         
     },
+    description : {
+        type : String
+    },
     quantity : {
         type : String
     },
