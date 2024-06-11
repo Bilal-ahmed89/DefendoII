@@ -83,7 +83,7 @@ function Checkout() {
         try {
             await createOrder(newOrder);
 
-            const emailResult = emailjs.send('service_8s9uhts', 'template_3bf68q7', newOrder, 'biKstQmjFPJ1OeWpZ')
+            const emailResult = emailjs.send('service_ghnch3b', 'template_7vfcs8a', newOrder, 'kKQ4i9t_9NkfBYBtO')
                 .then((result) => { console.log(result.text) },
                     (error) => { console.log(error.text) });
             console.log(emailResult.text);
